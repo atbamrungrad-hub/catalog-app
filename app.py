@@ -52,4 +52,6 @@ if selected_items:
     encoded_msg = urllib.parse.quote(final_message)
     line_url = f"https://line.me/R/msg/text/?{encoded_msg}"
     
-    st.link_button("🟢 แชร์เข้าแอป LINE ทันที", line_url, type="primary", use_container_
+    st.link_button("🟢 แชร์เข้าแอป LINE ทันที", line_url, type="primary", use_container_width=True)
+else:
+    st.info("👆 กรุณาติ๊กเลือกแคตตาล็อกด้านบนอย่างน้อย 1 รายการก่อนครับ")
